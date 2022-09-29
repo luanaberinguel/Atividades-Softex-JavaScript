@@ -1,0 +1,20 @@
+Acesse pelo menos dois sites de sua preferência e os inspecione com o botão direito do mouse na página web.
+Com o código fonte aberto você deve: 
+
+Verificar no código algum elemento que utilize JavaScript; 
+Marcar alguns elementos do site; 
+Explicar como ele se comporta. Exemplo: entrar no site do Google, inspecionar o botão de pesquisa, verificar o código e explicar qual a finalidade do botão. 
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Site Visitado: https://br.yahoo.com/
+
+No site da Yahoo, inspecionei o botão de pesquisar. O mesmo é utilizado como buscador. Trecho do código abaixo (elemento):
+
+<input type="text" class="_yb_1sjo4" id="ybar-sbq" name="p" style="" value="" autocomplete="off" required="" placeholder="" autofocus="" data-rapid_p="12" data-v9y="1" role="combobox" aria-autocomplete="both">
+
+Site Visitado:  https://capricho.abril.com.br/
+
+No site da Capricho o templaite é em JavaScript conforme trecho de código abaixo (elemento):
+
+<script>var ajaxurl = "https:\/\/capricho.abril.com.br\/wp-admin\/admin-ajax.php";</script>
