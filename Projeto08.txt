@@ -1,0 +1,56 @@
+Instruções do projeto
+Crie um programa que contenha os seguintes tipos de funções:
+
+1. uma função tradicional com a palavra reservada “Function” e sem nenhum parâmetro;
+2. uma função tradicional com parâmetros e um retorno de valor;
+3. uma arrow function com parâmetros e que retorne um valor.
+
+Crie um programa que utilize essas três funções de forma lógica, por exemplo: um programa de calculadora.
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Código JavaScript:
+
+function main()
+{
+ var resp = document.getElementById('resp');
+ var num1 = parseFloat(document.getElementById("num1").value);
+ var num2 = parseFloat(document.getElementById("num2").value);
+ var texto='';
+
+ if(document.getElementById('soma').checked)
+  texto = soma(num1, num2);
+ if(document.getElementById('subtracao').checked)
+  texto = subtracao(num1, num2);
+ if(document.getElementById('multiplicacao').checked)
+  texto = multiplicacao(num1, num2);
+ if(document.getElementById('divisao').checked)
+  texto = divisao(num1, num2);
+
+ resp.innerHTML = texto;
+}
+
+function soma = (x, y) => {
+  
+  return (x+y);
+}
+
+console.log(soma(1,2))
+
+function subtracao(x, y)
+{
+  
+  return (x-y);
+}
+
+function multiplicacao(x, y)
+{
+  
+  return (x*y);
+}
+
+function divisao(x, y)
+{
+  
+  return (x/y);
+}
