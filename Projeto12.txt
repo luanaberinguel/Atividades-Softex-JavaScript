@@ -1,0 +1,36 @@
+Instruções do projeto
+Implemente e trate uma conexão com o seu banco de dados, usando JavaScript. Caso a conexão com o banco tenha sucesso, ele deve retornar uma frase positiva. Se isso não ocorrer, retorne uma frase informando o erro.
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+EXEMPLO: 
+
+/Conexao com BD MySQL
+const mysql = require('mysql');
+
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'username',
+    password: '123456',
+    database: 'database'
+});
+
+connection.connect(function (err) {
+    if (err) {
+        console.error('error connecting: ' + err.stack);
+        return;
+    }
+    console.log('connected as id ' + connection.threadId);
+});
+
+exports.query = function (cb) {
+    connection.query('SELECT * from informacoes;', function (err, rows, fields) {
+        if (!err) {
+            var resultado = rows;
+            cb(null, resultado);
+        } else {
+            console.log('Erro ao realizar a consulta');
+            cb(err);
+        }
+    });
+}
